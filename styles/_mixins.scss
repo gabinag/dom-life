@@ -1,0 +1,29 @@
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) { //768
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) { //1024
+        @content;
+    }
+}
+
+@mixin flexCenter() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin button() {
+    padding: .5em 1em;
+    border-style: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: $w01;
+    background-image: linear-gradient(to bottom, $c01, $d01);
+    cursor: pointer;
+}
+
