@@ -236,7 +236,10 @@
 .compromisso-section{
     position: relative;
     margin-top: 0;
-    padding: 2rem 0;
+    padding: 2rem 0rem;
+    .content__title {
+        padding: 0rem 1rem;
+    }
     .wrap-cards {
         margin: auto;
         margin-top: 1rem;
@@ -273,6 +276,14 @@
         height: 100%;
         top: 0;
         z-index: -1;
+        @include desktop {
+            border-bottom-right-radius: 180px;
+            left: 0;
+            width: 95%;
+        }
+        @media screen and (min-width: 1500px) {
+            width: 82%;
+        }
     }
     @include tablet {
         .wrap-cards {
@@ -282,13 +293,6 @@
         }
         .card {
             height: 260px;
-        }
-    }
-    @include desktop {
-        .bg-compromisso {
-            border-bottom-right-radius: 180px;
-            left: 0;
-            width: 95%;
         }
     }
 }
@@ -325,6 +329,16 @@
         width: 100%;
         height: 100%;
         z-index: -2;
+        @include desktop {
+            background-image: linear-gradient(to right, $p01 50%, #DBF4F7);
+            border-bottom-left-radius: 180px;
+            height: 440px;
+            width: 95%;
+            right: 0;
+        }
+        @media screen and (min-width: 1500px) {
+            width: 82%;
+        }
     }
     @include tablet {
         .wrap-info {
@@ -340,15 +354,6 @@
                 margin-left: 2.5rem;
             }
         }
-    @include desktop {
-        .bg-info {
-            background-image: linear-gradient(to right, $p01 50%, #DBF4F7);
-            border-bottom-left-radius: 180px;
-            height: 440px;
-            width: 95%;
-            right: 0;
-        }
-    }
 }
 }
 

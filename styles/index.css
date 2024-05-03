@@ -285,7 +285,10 @@
 .compromisso-section {
   position: relative;
   margin-top: 0;
-  padding: 2rem 0;
+  padding: 2rem 0rem;
+}
+.compromisso-section .content__title {
+  padding: 0rem 1rem;
 }
 .compromisso-section .wrap-cards {
   margin: auto;
@@ -324,6 +327,18 @@
   top: 0;
   z-index: -1;
 }
+@media (min-width: 1024px) {
+  .compromisso-section .bg-compromisso {
+    border-bottom-right-radius: 180px;
+    left: 0;
+    width: 95%;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .compromisso-section .bg-compromisso {
+    width: 82%;
+  }
+}
 @media (min-width: 768px) {
   .compromisso-section .wrap-cards {
     justify-content: center;
@@ -332,13 +347,6 @@
   }
   .compromisso-section .card {
     height: 260px;
-  }
-}
-@media (min-width: 1024px) {
-  .compromisso-section .bg-compromisso {
-    border-bottom-right-radius: 180px;
-    left: 0;
-    width: 95%;
   }
 }
 
@@ -376,6 +384,20 @@
   height: 100%;
   z-index: -2;
 }
+@media (min-width: 1024px) {
+  .info-section .bg-info {
+    background-image: linear-gradient(to right, #00A1B4 50%, #DBF4F7);
+    border-bottom-left-radius: 180px;
+    height: 440px;
+    width: 95%;
+    right: 0;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .info-section .bg-info {
+    width: 82%;
+  }
+}
 @media (min-width: 768px) {
   .info-section .wrap-info {
     flex-direction: row;
@@ -389,15 +411,6 @@
   }
   .info-section .wrap-button button {
     margin-left: 2.5rem;
-  }
-}
-@media (min-width: 768px) and (min-width: 1024px) {
-  .info-section .bg-info {
-    background-image: linear-gradient(to right, #00A1B4 50%, #DBF4F7);
-    border-bottom-left-radius: 180px;
-    height: 440px;
-    width: 95%;
-    right: 0;
   }
 }
 
